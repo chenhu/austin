@@ -1,0 +1,23 @@
+module austin {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:austin";
+    prefix "austin";
+
+    revision "2015-01-05" {
+        description "Initial revision of austin model";
+
+    }
+    rpc add-flow {
+ 			input {
+				leaf flow-file {
+					type string;
+					}
+			}	
+			output {
+				leaf result {
+					type string;
+				}
+			}
+    }
+}
+
